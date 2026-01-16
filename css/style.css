@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* Restablecimiento básico */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Ocultar barra de desplazamiento manteniendo funcionalidad */
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE y Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari y Opera */
+}
+
+/* Espaciado de seguridad para dispositivos con notch (iOS) */
+.pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Oculta scrollbar en navegadores basados en Webkit (Chrome, Safari) */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Efectos de interacción para los ítems de navegación */
+.nav-item {
+    position: relative;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+/* Fondo al pasar el cursor */
+.nav-item:hover {
+    background-color: #334155;
+    /* slate-700 - Gris Oscuro */
+    color: white !important;
+}
+
+.nav-item:hover span {
+    color: white !important;
+}
+
+.nav-item:hover .nav-icon {
+    filter: brightness(0) invert(1);
+}
+
+.nav-item:active {
+    background-color: #1e293b;
+    /* slate-800 */
+}
+
+/* Accordion Styles */
+details>summary {
+    list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] summary~* {
+    animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom rotate for the arrow icon */
+details[open] summary .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* Hover effects for summary */
+details summary:hover {
+    background-color: #f8fafc;
+    /* slate-50 */
+}

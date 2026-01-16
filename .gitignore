@@ -1,0 +1,13 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+dist/
+.env
+
+# Tooling
+.gemini/
+.agent/
+brain/
