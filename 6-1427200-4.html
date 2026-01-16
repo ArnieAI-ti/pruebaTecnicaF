@@ -324,30 +324,22 @@
                       <span
                         class="bg-white/90 text-slate-700 px-3 py-1 rounded-full text-xs font-semibold shadow-sm">Zoom</span>
                     </div>
-                    <img id="img_main" src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24T-4G-E_front.jpg"
-                      alt="Switch Catalyst"
+                    <img id="img_main" src="./images/6-1427200-4-box.png" alt="Cable AMP NetConnect"
                       class="max-h-full max-w-full object-contain cursor-pointer transition-transform duration-500 hover:scale-110"
                       onclick="viewImage(this.src)" />
                   </div>
 
                   <!-- Miniaturas -->
-                  <div class="grid grid-cols-3 gap-4">
+                  <div class="grid grid-cols-2 gap-4">
                     <div
                       class="aspect-square border-2 border-transparent hover:border-blue-600 rounded-lg p-2 cursor-pointer bg-slate-50 transition-all active:scale-95"
                       onclick="toExchangeImage(this)">
-                      <img src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24T-4G-E_front.jpg"
-                        alt="Vista 1" class="w-full h-full object-contain" />
+                      <img src="./images/6-1427200-4-box.png" alt="Vista Caja" class="w-full h-full object-contain" />
                     </div>
                     <div
                       class="aspect-square border-2 border-transparent hover:border-blue-600 rounded-lg p-2 cursor-pointer bg-slate-50 transition-all active:scale-95"
                       onclick="toExchangeImage(this)">
-                      <img src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24T-4G-E_front_large.jpg"
-                        alt="Vista 2" class="w-full h-full object-contain" />
-                    </div>
-                    <div
-                      class="aspect-square border-2 border-transparent hover:border-blue-600 rounded-lg p-2 cursor-pointer bg-slate-50 transition-all active:scale-95"
-                      onclick="toExchangeImage(this)">
-                      <img src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24T-4G-E_back.jpg" alt="Vista 3"
+                      <img src="./images/6-1427200-4-cable.png" alt="Detalle Cable"
                         class="w-full h-full object-contain" />
                     </div>
                   </div>
@@ -395,8 +387,8 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                       <div
                         class="bg-slate-50 p-3 rounded-lg border border-slate-100 flex items-center justify-between group hover:border-blue-200 transition-colors">
-                        <span class="text-slate-500 font-medium text-sm">Voltage</span>
-                        <span class="text-slate-800 font-bold">300VAC</span>
+                        <span class="text-slate-500 font-medium text-sm">Voltaje</span>
+                        <span class="text-slate-800 font-bold">300V AC/DC</span>
                       </div>
                       <div
                         class="bg-slate-50 p-3 rounded-lg border border-slate-100 flex items-center justify-between group hover:border-blue-200 transition-colors">
@@ -406,12 +398,12 @@
                       <div
                         class="bg-slate-50 p-3 rounded-lg border border-slate-100 flex items-center justify-between group hover:border-blue-200 transition-colors">
                         <span class="text-slate-500 font-medium text-sm">Temp. Op.</span>
-                        <span class="text-slate-800 font-bold">-20° a -60°C</span>
+                        <span class="text-slate-800 font-bold">-20° a 60°C</span>
                       </div>
                       <div
                         class="bg-slate-50 p-3 rounded-lg border border-slate-100 flex items-center justify-between group hover:border-blue-200 transition-colors">
-                        <span class="text-slate-500 font-medium text-sm">Storage</span>
-                        <span class="text-slate-800 font-bold">-20° a -80°C</span>
+                        <span class="text-slate-500 font-medium text-sm">Almacén</span>
+                        <span class="text-slate-800 font-bold">-20° a 80°C</span>
                       </div>
                       <div
                         class="bg-slate-50 p-3 rounded-lg border border-slate-100 flex items-center justify-between group hover:border-blue-200 transition-colors col-span-1 sm:col-span-2">
@@ -462,19 +454,14 @@
 
           <!-- Sección de galería de imágenes (oculta inicialmente) -->
           <div id="images-section" class="hidden mt-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-                <img src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24T-4G-E_front.jpg" alt="Vista Caja"
+                <img src="./images/6-1427200-4-box.png" alt="Vista Caja"
                   class="w-full h-64 object-contain p-4 cursor-pointer hover:opacity-90 transition"
                   onclick="viewImage(this.src)" />
               </div>
               <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-                <img src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24T-4G-E_front_large.jpg"
-                  alt="Vista Detalle" class="w-full h-64 object-contain p-4 cursor-pointer hover:opacity-90 transition"
-                  onclick="viewImage(this.src)" />
-              </div>
-              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
-                <img src="https://web.netperu100.com/cisco/catalyst/images/C9200L-24T-4G-E_back.jpg" alt="Vista Trasera"
+                <img src="./images/6-1427200-4-cable.png" alt="Detalle Cable"
                   class="w-full h-64 object-contain p-4 cursor-pointer hover:opacity-90 transition"
                   onclick="viewImage(this.src)" />
               </div>
@@ -693,13 +680,53 @@
       </div>
     </div>
 
-    <!-- Sección Detallada de Especificaciones con Acordeón -->
+    <!-- Sección Detallada de Especificaciones -->
     <section class="py-12 bg-white border-t border-slate-100">
       <div class="container mx-auto px-4 max-w-5xl">
-        <div class="mb-14">
-          <h2 class="text-xl font-bold text-slate-900 mb-1">Detalles Técnicos</h2>
-          <p class="text-slate-500 mt-2">Especificaciones sobre el material, certificación y normativas del producto.
-          </p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Columna: Descripción -->
+          <div>
+            <h2 class="text-xl font-bold text-slate-900 mb-6">Descripción</h2>
+            <p class="text-slate-600 leading-relaxed mb-4">
+              Cables AMP NetConnect Cat 6, superan los estándares TIA/EIA e ISO/IEC. Diseñados para aplicaciones de alto
+              rendimiento como Gigabit Ethernet y VoIP.
+            </p>
+            <p class="text-slate-600 leading-relaxed">
+              Disponibles en colores CMR (blanco, gris y azul). Empaque "reel-in-box" de 1000 pies, verificado hasta 600
+              MHz y con certificación de inflamabilidad UL.
+            </p>
+          </div>
+
+          <!-- Columna: Especificaciones Técnicas (Ordenado y Corto) -->
+          <div>
+            <h2 class="text-xl font-bold text-slate-900 mb-6">Especificaciones Técnicas</h2>
+            <div class="space-y-3">
+              <div class="flex justify-between border-b border-slate-50 py-2">
+                <span class="text-slate-500 text-sm">Voltaje</span>
+                <span class="font-bold text-slate-800 text-sm">300V AC/DC</span>
+              </div>
+              <div class="flex justify-between border-b border-slate-50 py-2">
+                <span class="text-slate-500 text-sm">Velocidad NVP</span>
+                <span class="font-bold text-slate-800 text-sm">70%</span>
+              </div>
+              <div class="flex justify-between border-b border-slate-50 py-2">
+                <span class="text-slate-500 text-sm">Temp. Operación</span>
+                <span class="font-bold text-slate-800 text-sm">-20° a 60° C</span>
+              </div>
+              <div class="flex justify-between border-b border-slate-50 py-2">
+                <span class="text-slate-500 text-sm">Temp. Almacén</span>
+                <span class="font-bold text-slate-800 text-sm">-20° a 80° C</span>
+              </div>
+              <div class="flex justify-between border-b border-slate-50 py-2">
+                <span class="text-slate-500 text-sm">Estándar</span>
+                <span class="font-bold text-slate-800 text-sm">TIA/EIA-568-B.2-1</span>
+              </div>
+              <div class="flex justify-between border-b border-slate-50 py-2">
+                <span class="text-slate-500 text-sm">Frecuencia</span>
+                <span class="font-bold text-slate-800 text-sm">Hasta 600 MHz</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -830,10 +857,9 @@
             Soluciones Avanzadas en Redes y Conectividad. Distribuidor autorizado.
           </p>
           <div class="flex gap-4 pt-2 justify-start">
-            <a href="#" class="hover:text-white transition-colors" title="Facebook"><i
-                class="fab fa-facebook-f"></i></a>
-            <a href="https://wa.me/994428965" class="hover:text-green-500 transition-colors" title="WhatsApp"
-              target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/994428965" class="hover:text-green-500 transition-colors"><i
+                class="fab fa-whatsapp"></i></a>
           </div>
         </div>
 
@@ -856,15 +882,15 @@
         <div class="space-y-3 flex flex-col items-start">
           <h3 class="font-bold text-white uppercase tracking-wider">Productos</h3>
           <ul class="space-y-1.5 pt-1 flex flex-col items-start">
-            <li><a href="https://www.ds3comunicaciones.com/l-com/AccessPoint.html" target="_blank" rel="noopener"
+            <li><a href="https://www.ds3comunicaciones.com/l-com/AccessPoint.html" target="_blank"
                 class="hover:text-white transition-colors">Access Point</a></li>
-            <li><a href="https://www.ds3comunicaciones.com/lcom/AntenasMIMO.html" target="_blank" rel="noopener"
+            <li><a href="https://www.ds3comunicaciones.com/lcom/AntenasMIMO.html" target="_blank"
                 class="hover:text-white transition-colors">Antenas MIMO</a></li>
-            <li><a href="https://www.ds3comunicaciones.com/l-com/AntenasPanel.html" target="_blank" rel="noopener"
+            <li><a href="https://www.ds3comunicaciones.com/l-com/AntenasPanel.html" target="_blank"
                 class="hover:text-white transition-colors">Antenas Panel</a></li>
-            <li><a href="https://www.ds3comunicaciones.com/l-com/AntenaSectorial.html" target="_blank" rel="noopener"
+            <li><a href="https://www.ds3comunicaciones.com/l-com/AntenaSectorial.html" target="_blank"
                 class="hover:text-white transition-colors">Antenas Sector</a></li>
-            <li><a href="https://www.ds3comunicaciones.com/trendnet/MediaConvert.html" target="_blank" rel="noopener"
+            <li><a href="https://www.ds3comunicaciones.com/trendnet/MediaConvert.html" target="_blank"
                 class="hover:text-white transition-colors">Media Converter</a></li>
           </ul>
         </div>
