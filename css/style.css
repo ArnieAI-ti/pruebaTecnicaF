@@ -18,6 +18,35 @@ body {
     /* Chrome, Safari y Opera */
 }
 
+/* Personalización de la barra de desplazamiento global */
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    /* Blanco */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    /* Slate-700 (Gris Oscuro) */
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    /* Efecto de margen blanco */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1e293b;
+    /* Slate-800 */
+}
+
+/* Soporte para Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #334155 #ffffff;
+}
+
 /* Espaciado de seguridad para dispositivos con notch (iOS) */
 .pb-safe {
     padding-bottom: env(safe-area-inset-bottom);

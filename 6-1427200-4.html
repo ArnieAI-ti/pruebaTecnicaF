@@ -124,7 +124,7 @@
   <main class="container mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Bloque de navegación jerárquica (Breadcrumbs) -->
     <div
-      class="border px-3 py-2 text-xs md:text-sm text-slate-600 flex flex-nowrap items-center gap-1 overflow-x-auto scrollbar-hide whitespace-nowrap">
+      class="border border-t-0 rounded-b-2xl bg-white shadow-sm px-4 py-2.5 text-xs md:text-sm text-slate-600 flex flex-nowrap items-center gap-1 overflow-x-auto scrollbar-hide whitespace-nowrap">
       <a href="https://www.ds3comunicaciones.com/index.html" class="flex-shrink-0 hover:text-slate-800"
         aria-label="Ir a Inicio" title="Inicio">
         <i class="fa-solid fa-house text-[0.9em]"></i>
@@ -834,8 +834,10 @@
     <div class="container mx-auto px-4 max-w-5xl">
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">
         <div class="space-y-3 flex flex-col items-start">
-          <img src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg" alt="Logo DS3"
-            class="h-9 mb-2 grayscale brightness-200 opacity-80" />
+          <div class="bg-white p-2 rounded-lg mb-4 flex items-center justify-center w-fit shadow-sm relative z-50">
+            <img src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg" alt="Logo DS3"
+              class="h-10 grayscale-0 opacity-100" style="filter: grayscale(0) !important;" />
+          </div>
           <p class="leading-relaxed opacity-70 max-w-[200px] text-left">
             Soluciones Avanzadas en Redes y Conectividad. Distribuidor autorizado.
           </p>
